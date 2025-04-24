@@ -10,7 +10,8 @@ try:
     import spacy
     spacy.load("en_core_web_sm")
 except:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "en_core_web_sm"])
+    # Install the spaCy model if it's not found
+    subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
     import spacy
     spacy.load("en_core_web_sm")
 
