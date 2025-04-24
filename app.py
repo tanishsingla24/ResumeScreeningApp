@@ -2,6 +2,17 @@ import streamlit as st
 from utils.parser import extract_resume_data
 from utils.matcher import calculate_match_score
 from utils.visualizer import generate_graphs
+import subprocess
+import sys
+
+# Ensure the spaCy model is installed
+try:
+    import spacy
+    spacy.load("en_core_web_sm")
+except:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "en_core_web_sm"])
+    import spacy
+    spacy.load("en_core_web_sm")
 
 # Load custom CSS
 def local_css(file_name):
