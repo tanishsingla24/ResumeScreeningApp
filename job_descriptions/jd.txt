@@ -1,0 +1,3 @@
+We are seeking a software developer with experience in Python, machine learning, and data analytics.
+Candidates must be proficient in libraries like Pandas, Scikit-learn, and should have worked on at least one NLP project.
+Excellent communication and team collaboration skills are a must.
